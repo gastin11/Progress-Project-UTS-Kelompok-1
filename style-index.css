@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+  }
+
+@font-face {
+    font-family: "Valorant Font";
+    src: url(font/Valorant\ Font.ttf);
+}
+
+.judul h1{
+    font-family: "Valorant Font";
+    color: #fff;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 40px;
+    font-size: 55px;
+    text-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
+}
+
+.judul h3{
+    font-family: "Valorant Font";
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.pesawat-1, .pesawat-2{
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: transparent;
+    margin: 20px 22px 5px 22px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px #fff, 0 0 20px #8696FE;
+}
+
+.isi-pesawat1, .isi-pesawat2{
+    margin: 5px 0px 5px 0px;
+}
+
+#img-pesawat1, #img-pesawat2{
+    width: 250px;   
+    margin: 0px 20px 35px 20px;    
+    animation: planetJet 0.3s infinite;
+
+}
+
+.pesawat-1:hover{
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 50px #8696FE, 0 0 60px #8696FE;
+}
+
+.pesawat-2:hover{
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 50px #C4B0FF, 0 0 60px #C4B0FF;
+}
+
+
+.pesawat-1 a, .pesawat-2 a{
+    padding: 10px 50px 10px 50px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background: rgb(6,51,135);
+    background: linear-gradient(0deg, rgba(6,51,135,1) 0%, rgba(5,35,98,1) 100%);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 6px #fff, 0 0 12px #8696FE;
+}
+
+.pesawat-1 a:hover{
+    background: transparent;
+    box-shadow: 0 0 20px #8696FE, 0 0 30px #8696FE;
+}
+
+.pesawat-2 a:hover{
+    background: transparent;
+    box-shadow: 0 0 20px #C4B0FF, 0 0 30px #C4B0FF;
+}
+
+.menu-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cara-main, .tentang-game{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
+    background: transparent;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cara-main img{
+    width: 25px;
+}
+
+
+.cara-main .teks-howto{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.cara-main:hover .teks-howto{
+    visibility: visible;
+}
+
+
+.tentang-game .teks-tentang{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tentang-game:hover .teks-tentang{
+    visibility: visible;
+}
+
+.tentang-game img{
+    width: 25px;
+}
+
+.popup-cara{
+    width: 400px;
+    background: #052362;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 30px 30px 30px;
+    color: #fff;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.popup-cara img{
+    width: 160px;
+    margin-top: -115px;
+    margin-left: 80%;
+    border-radius: 50px;
+    rotate: -36deg;
+}
+
+.open-popup-cara{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+}
+
+.popup-cara ol, h2{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px #fff, 0 0 8px #fff;
+}
+
+.popup-cara h2, .popup-tentang h2{
+    text-align: center;
+    font-family: "Valorant Font";
+    text-shadow: 0 0 4px #fff, 0 0 12px #fff;
+}
+
+.popup-cara button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #fff;
+    color: #052362;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #fff, 0 0 12px #fff;
+}
+
+
+.popup-tentang{
+    width: 650px;
+    background: #052362;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 30px 30px 30px;
+    text-align: justify;
+    color: #fff;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.popup-tentang img{
+    width: 150px;
+    margin-top: -100px;
+    margin-left: 90%;
+    border-radius: 50px;
+    rotate: -36deg;
+}
+
+.open-popup-tentang{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+}
+
+.popup-tentang p, h2{
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px #fff, 0 0 8px #fff;
+}
+
+.popup-tentang button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #fff;
+    color: #052362;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #fff, 0 0 12px #fff;
+}

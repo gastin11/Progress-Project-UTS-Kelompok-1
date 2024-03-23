@@ -141,10 +141,13 @@ h3{
     color: #C4B0FF;
 }
 
-.musik{
-    display: inline-flex;
+.menu{
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+    
+.musik, .pause{
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
@@ -154,12 +157,11 @@ h3{
     cursor: pointer;
 }
 
-.musik img{
+.musik img, .pause img{
     width: 25px;
 }
 
-.musik .teks-musik{
-    margin-left: 12%;
+.musik .teks-musik, .pause .teks-pause{
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -174,6 +176,6 @@ h3{
     z-index: 1;
 }
 
-.musik:hover .teks-musik{
+.musik:hover .teks-musik, .pause:hover .teks-pause{
     visibility: visible;
 }

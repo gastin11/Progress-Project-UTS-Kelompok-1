@@ -66,8 +66,6 @@ body{
 #img-pesawat1, #img-pesawat2{
     width: 250px;   
     margin: 0px 20px 35px 20px;    
-    animation: planetJet 0.3s infinite;
-
 }
 
 .pesawat-1:hover{
@@ -108,7 +106,7 @@ body{
     justify-content: center;
 }
 
-.cara-main, .tentang-game{
+.cara-main, .tentang-game, .musik{
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
@@ -118,12 +116,12 @@ body{
     cursor: pointer;
 }
 
-.cara-main img{
+.cara-main img, .tentang-game img, .musik img{
     width: 25px;
 }
 
 
-.cara-main .teks-howto{
+.cara-main .teks-caraMain, .tentang-game .teks-tentangGame, .musik .teks-musik{
     visibility: hidden;
     width: 120px;
     background-color: white;
@@ -138,39 +136,15 @@ body{
     z-index: 1;
 }
 
-.cara-main:hover .teks-howto{
+.cara-main:hover .teks-caraMain, .tentang-game:hover .teks-tentangGame, .musik:hover .teks-musik{
     visibility: visible;
 }
 
-
-.tentang-game .teks-tentang{
-    visibility: hidden;
-    width: 120px;
-    background-color: white;
-    color: #333;
-    font-size: 12px;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
-
-.tentang-game:hover .teks-tentang{
-    visibility: visible;
-}
-
-.tentang-game img{
-    width: 25px;
-}
-
-.popup-cara{
+.popup-caraMain{
     width: 400px;
     background: #052362;
-    border: 1px solid #fff;
-    border-radius: 8px;
+    border: 4px solid  #fff;
+    border-radius: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -183,7 +157,7 @@ body{
 
 }
 
-.popup-cara img{
+.popup-caraMain img{
     width: 160px;
     margin-top: -115px;
     margin-left: 80%;
@@ -191,25 +165,25 @@ body{
     rotate: -36deg;
 }
 
-.open-popup-cara{
+.open-popup-caraMain{
     visibility: visible;
     transform: translate(-50%,-50%) scale(1);
     top: 50%;
 }
 
-.popup-cara ol, h2{
+.popup-caraMain ol, h2{
     margin-top: 5px;
     margin-bottom: 20px;
     text-shadow: 0 0 2px #fff, 0 0 8px #fff;
 }
 
-.popup-cara h2, .popup-tentang h2{
+.popup-caraMain h2, .popup-tentangGame h2{
     text-align: center;
     font-family: "Valorant Font";
     text-shadow: 0 0 4px #fff, 0 0 12px #fff;
 }
 
-.popup-cara button{
+.popup-caraMain button{
     width: 100%;
     margin-top: 20px;
     padding: 10px 0;
@@ -224,11 +198,11 @@ body{
 }
 
 
-.popup-tentang{
+.popup-tentangGame{
     width: 650px;
     background: #052362;
-    border: 1px solid #fff;
-    border-radius: 8px;
+    border: 4px solid #fff;
+    border-radius: 15px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -242,7 +216,7 @@ body{
 
 }
 
-.popup-tentang img{
+.popup-tentangGame img{
     width: 150px;
     margin-top: -100px;
     margin-left: 90%;
@@ -250,18 +224,18 @@ body{
     rotate: -36deg;
 }
 
-.open-popup-tentang{
+.open-popup-tentangGame{
     visibility: visible;
     transform: translate(-50%,-50%) scale(1);
     top: 50%;
 }
 
-.popup-tentang p, h2{
+.popup-tentangGame p, h2{
     margin-bottom: 20px;
     text-shadow: 0 0 2px #fff, 0 0 8px #fff;
 }
 
-.popup-tentang button{
+.popup-tentangGame button{
     width: 100%;
     margin-top: 20px;
     padding: 10px 0;
@@ -274,3 +248,4 @@ body{
     cursor: pointer;
     box-shadow: 0 0 4px #fff, 0 0 12px #fff;
 }
+

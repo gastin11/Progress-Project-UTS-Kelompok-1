@@ -105,3 +105,19 @@ window.addEventListener('keydown',function(e){
         }
     }
 });
+
+const audio = new Audio();
+audio.src = "music/backsound1.mp3";
+audio.loop = true;
+
+let iconMusik = document.getElementById("musik-icon");
+
+function toggleMusic() {
+    if (audio.paused) {
+        audio.play(); // Mulai audio jika sedang di-pause
+        iconMusik.src = "icon/noaudio.png"; // Ganti ikon menjadi ikon mute
+    } else {
+        audio.pause(); // Pause audio jika sedang diputar
+        iconMusik.src = "icon/audio.png"; // Ganti ikon menjadi ikon musik
+    }
+}

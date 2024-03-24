@@ -25,9 +25,15 @@
 
     </div>
     <div class="menu">
-        <div class="pause" onclick="openPopupPause">
+        <div class="pause" onclick="openPopupPause()">
             <img id="pauseIcon" src="icon/pause.png" alt="">
             <span class="teks-pause">pause</span>
+        </div>
+        <div class="popupPause" id="popupPause">
+            <h1>Game Paused</h1>
+            <button type="button" id="btn-lanjutkanGame" onclick="resumeGame()">Lanjutkan Game</button>
+            <button type="button" id="btn-ulangiGame" onclick="restartGame()">Ulangi Game</button>
+            <button type="button" id="menuButtonPause">Kembali Ke Menu Utama</button>
         </div>
         <div class="musik" onclick="toggleMusic()">
             <img id="musik-icon" src="icon/audio.png" alt="">

@@ -165,7 +165,7 @@ body{
     rotate: -36deg;
 }
 
-.open-popup-caraMain{
+.open-popup-caraMain, .open-popup-tentangGame{
     visibility: visible;
     transform: translate(-50%,-50%) scale(1);
     top: 50%;
@@ -183,7 +183,7 @@ body{
     text-shadow: 0 0 4px #fff, 0 0 12px #fff;
 }
 
-.popup-caraMain button{
+.popup-caraMain button, .popup-tentangGame button{
     width: 100%;
     margin-top: 20px;
     padding: 10px 0;
@@ -233,19 +233,5 @@ body{
 .popup-tentangGame p, h2{
     margin-bottom: 20px;
     text-shadow: 0 0 2px #fff, 0 0 8px #fff;
-}
-
-.popup-tentangGame button{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #fff;
-    color: #052362;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 0 4px #fff, 0 0 12px #fff;
 }
 

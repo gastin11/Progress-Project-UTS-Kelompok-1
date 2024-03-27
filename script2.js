@@ -4,6 +4,8 @@ let meteorTimeout; // Variabel untuk menampung timeout meteor
 let backgroundTimeout; // Variabel untuk menampung timeout background
 var gerak = true;
 var meteorSpeed = 0.5;
+let soundGameOver = new Audio("music/backsoundgameover.wav")
+
 
 function openPopup(){
     var result = document.getElementById("result-2");
@@ -85,6 +87,7 @@ function setMeteorMoving() {
 
         if (gerak && !popupPause.classList.contains("open-popupPause")) {
             if (meteor.offsetTop + 56 >= plane.offsetTop && meteor.offsetLeft + 50 >= plane.offsetLeft && meteor.offsetTop + 56 <= plane.offsetTop + 100 && meteor.offsetLeft <= plane.offsetLeft + 50) {
+                soundGameOver.play()
                 openPopup();
                 gerak = false;
                 plane.setAttribute('class', 'freeze');

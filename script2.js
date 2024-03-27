@@ -11,7 +11,9 @@ function openPopup(){
     var result = document.getElementById("result-2");
     var score = document.getElementById('score-2').innerHTML;
     result.textContent = score;
-    popup.classList.add("open-popup-2");}
+    popup.classList.add("open-popup-2");
+    audio.pause();
+}
 
 function closePopup(){
     popup.classList.remove("open-popup-2");

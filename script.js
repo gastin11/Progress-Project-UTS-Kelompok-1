@@ -12,6 +12,7 @@ function openPopup() {
     var score = document.getElementById('score').innerHTML;
     result.textContent = score;
     popup.classList.add("open-popup");
+    audio.pause();
 }
 
 // Fungsi untuk menutup popup hasil

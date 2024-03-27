@@ -179,3 +179,44 @@ h3{
 .musik:hover .teks-musik, .pause:hover .teks-pause{
     visibility: visible;
 }
+
+.popupPause{
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.open-popupPause{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popupPause button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #8696FE;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.popupPause button:hover{
+    background: #fff;
+    color: #8696FE;
+}

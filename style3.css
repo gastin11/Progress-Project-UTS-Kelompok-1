@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: "Valorant Font";
+    src: url(font/Valorant\ Font.ttf);
+}
+
+
+/* Pesawat 3 */
+body{
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+  }
+  
+h1{
+    font-family: "Valorant Font";
+    text-shadow: 0 0 4px #fff, 0 0 12px #C4B0FF;
+    margin-top: 60px;
+    color: #000000;
+}
+
+h2, h3{
+    color: #000000;
+    text-shadow: 0 0 4px #fff, 0 0 12px #C4B0FF;
+}
+
+#main-3{
+    width: 400px;
+    height: 500px;
+    background: url("images3/bg-main.png");
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#area-3{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 100;
+}
+
+@keyframes planetJet-3{
+    from{
+        background:url("images3/Roket1.png") ;
+        background-size: 100%;
+    }
+    to{
+        background:url("images3/Roket2.png") ;
+        background-size: 100%;
+    }
+}
+
+#plane-3{
+    width: 110px;
+    height: 135px; 
+    background:url("images3/Roket1.png") ;
+    background-size: 100%;
+    position: absolute;
+    margin-top: 400px;
+    animation: planetJet-3 0.3s infinite;
+}
+
+#plane-3.freeze{
+    width: 110px;
+    height: 110px;
+    background:url("images3/Roket1.png") ;
+    background-size: 100%;
+    position: absolute;
+    margin-top: 400px;
+    animation: none;
+}
+
+@keyframes meteor-3{
+    from{
+        background:url("images3/logo1.png") ;
+        background-size: 100%;
+    }
+    to{
+        background:url("images3/logo2.png") ;
+        background-size: 100%;
+    }
+}
+
+#meteor-3{
+    width: 120px;
+    height: 115px;
+    background:url("images3/logo1.png") ;
+    background-size: 100%;
+    animation: meteor-3 0.4s infinite;
+}
+
+#meteor-3.freeze{
+    width: 120px;
+    height: 115px;
+    background:url("images3/logo1.png") ;
+    background-size: 100%;
+    animation: none;
+}
+
+.popup-3{
+    width: 400px;
+    background: #052362;
+    border: 4px solid  #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+
+}
+
+.popup-3 h2{
+    font-family: "Valorant Font";
+    font-size: 40px;
+    margin-top: -25px;
+}
+
+.open-popup-3{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup-3 button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #fff;
+    color: #052362;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #fff, 0 0 12px #C4B0FF;
+}
+
+.popup-3 button:hover{
+    color: #fff;
+    background-color: #052362;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+.musik, .pause{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
+    background: transparent;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.musik img, .pause img{
+    width: 25px;
+}
+
+.musik .teks-musik, .pause .teks-pause{
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.musik:hover .teks-musik, .pause:hover .teks-pause{
+    visibility: visible;
+}
+
+.popupPause{
+    width: 400px;
+    background: #052362;
+    border: 4px solid  #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: black;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
+}
+
+.popupPause h1{
+    margin-top: 75px;
+}
+
+.popupPause img{
+    width: 150px;
+    margin-top: -100px;
+    margin-right: -390px;
+}
+
+.open-popupPause{
+    visibility: visible;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popupPause button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background: #fff;
+    color: #052362;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
+}
+
+.popupPause button:hover{
+    color: #fff;
+    background-color: #052362;
+}

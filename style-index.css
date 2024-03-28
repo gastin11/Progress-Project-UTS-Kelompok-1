@@ -48,7 +48,7 @@ body{
     margin-bottom: 2%;
 }
 
-.pesawat-1, .pesawat-2{
+.pesawat-1, .pesawat-2, .pesawat-3{
     border: 2px solid #fff;
     border-radius: 8px;
     background: transparent;
@@ -59,11 +59,11 @@ body{
     box-shadow: 0 0 10px #fff, 0 0 20px #8696FE;
 }
 
-.isi-pesawat1, .isi-pesawat2{
+.isi-pesawat1, .isi-pesawat2, .isi-pesawat3{
     margin: 5px 0px 5px 0px;
 }
 
-#img-pesawat1, #img-pesawat2{
+#img-pesawat1, #img-pesawat2, #img-pesawat3{
     width: 250px;   
     margin: 0px 20px 35px 20px;    
 }
@@ -78,8 +78,12 @@ body{
     box-shadow: 0 0 50px #C4B0FF, 0 0 60px #C4B0FF;
 }
 
+.pesawat-3:hover{
+    backdrop-filter: blur(25px);
+    box-shadow: 0 0 50px #C4B0FF, 0 0 60px #C4B0FF;
+}
 
-.pesawat-1 a, .pesawat-2 a{
+.pesawat-1 a, .pesawat-2 a, .pesawat-3 a{
     padding: 10px 50px 10px 50px;
     border: 1px solid #fff;
     border-radius: 8px;
@@ -96,6 +100,11 @@ body{
 }
 
 .pesawat-2 a:hover{
+    background: transparent;
+    box-shadow: 0 0 20px #C4B0FF, 0 0 30px #C4B0FF;
+}
+
+.pesawat-3 a:hover{
     background: transparent;
     box-shadow: 0 0 20px #C4B0FF, 0 0 30px #C4B0FF;
 }

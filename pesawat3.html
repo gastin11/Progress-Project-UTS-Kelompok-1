@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacecraft Survival</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <link rel="icon" type="image/x-icon" href="icon/icon.png">
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="images3/bg-body.mp4" type="video/mp4">
+    </video> 
+    <h1>Spacecraft Survival</h1>
+    <h3>Score : <span id="score-3">0</span></h3>
+    <div id="main-3" style="background-position-y: 0;">
+        <div id="area-3">
+            <div id="plane-3" style="margin-left: 170px; margin-top: 400px;"></div>
+            <div id="meteor-3" style="margin-top: 600px;"></div>
+            
+        </div>
+        <div class="popup-3" id="popup-3">
+            <h2>Result</h2>
+            <h3>Score : <span id="result-3"></span></h3>
+            <button id="button-3" type="button" onclick="closePopup()">Ulangi Game</button>
+            <button type="button-3" id="menuButton-3">Kembali Ke Menu Utama</button>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="pause" onclick="openPopupPause()">
+            <img id="pauseIcon" src="icon/pause.png" alt="">
+            <span class="teks-pause">pause</span>
+        </div>
+        <div class="popupPause" id="popupPause">
+            <!-- <img src="images3/logo2.png" alt=""> -->
+            <h1>Game Paused</h1>
+            <button type="button" id="btn-lanjutkanGame" onclick="resumeGame()">Lanjutkan Game</button>
+            <button type="button" id="btn-ulangiGame" onclick="restartGame()">Ulangi Game</button>
+            <button type="button" id="menuButtonPause">Kembali Ke Menu Utama</button>
+        </div>
+        <div class="musik" onclick="toggleMusic()">
+            <img id="musik-icon" src="icon/audio.png" alt="">
+            <span class="teks-musik">Musik</span>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script3.js"></script>
+
+</body>
+</html>

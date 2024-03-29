@@ -80,7 +80,7 @@ body{
 
 .pesawat-3:hover{
     backdrop-filter: blur(25px);
-    box-shadow: 0 0 50px #C4B0FF, 0 0 60px #C4B0FF;
+    box-shadow: 0 0 50px #fff, 0 0 60px #fff;
 }
 
 .pesawat-1 a, .pesawat-2 a, .pesawat-3 a{
@@ -106,7 +106,7 @@ body{
 
 .pesawat-3 a:hover{
     background: transparent;
-    box-shadow: 0 0 20px #C4B0FF, 0 0 30px #C4B0FF;
+    box-shadow: 0 0 20px #fff, 0 0 30px #fff;
 }
 
 .menu-2{

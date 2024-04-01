@@ -180,8 +180,12 @@ body{
     top: 50%;
 }
 
+.popup-caraMain h2{
+    text-shadow: 0 0 2px #fff, 0 0 8px #fff;
+    margin-top: -50px;
+}
+
 .popup-caraMain ol, h2{
-    margin-top: 5px;
     margin-bottom: 20px;
     text-shadow: 0 0 2px #fff, 0 0 8px #fff;
 }
@@ -239,7 +243,12 @@ body{
     top: 50%;
 }
 
-.popup-tentangGame p, h2{
+.popup-tentangGame h2{
+    text-shadow: 0 0 2px #fff, 0 0 8px #fff;
+    margin-top: -50px;
+}
+
+.popup-tentangGame p{
     margin-bottom: 20px;
     text-shadow: 0 0 2px #fff, 0 0 8px #fff;
 }

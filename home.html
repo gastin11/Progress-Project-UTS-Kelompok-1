@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style-home.css">
+    <link rel="icon" type="image/x-icon" href="icon/icon.png">
+    <title>Spacecraft Survival</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="video/bg menu.mp4" type="video/mp4">
+    </video> 
+
+    <div class="judul">
+        <h1>SPACECRAFT SURVIVAL</h1>
+        <h3>Pilih pesawat</h3>
+    </div>
+    <div class="menu">
+        <div class="pesawat-1">
+            <div class="isi-pesawat1">
+                <img id="img-pesawat1" src="imgMenu/2.png" alt="pesawat"><br>
+            <a href="pesawat1.html">Pilih</a>
+            </div>
+        </div>
+        <div class="pesawat-2">
+            <div class="isi-pesawat2">
+                <img id="img-pesawat2" src="imgMenu/4.png" alt="ufo"><br>
+                <a href="pesawat2.html">Pilih</a>
+            </div>
+        </div>
+        <div class="pesawat-3">
+            <div class="isi-pesawat3">
+                <img id="img-pesawat3" src="imgMenu/6.png" alt="Roket"><br>
+                <a href="pesawat3.html">Pilih</a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-2">
+        <div class="cara-main" onclick="openPopupCara()">
+            <img src="icon/caramain.png" alt="">
+            <span class="teks-caraMain">Cara Bermain</span>
+        </div>
+        <div class="popup-caraMain" id="popup-caraMain">
+            <img src="images/pesawat2.png" alt="">
+            <h2>Cara Bermain</h2>
+            <ol>
+                <li>Pilih pesawat yang ingin kamu mainkan</li>
+                <li>Gerakkan pesawat luar angkasamu</li>
+                <li>Hindari berbagai macam rintangan yang menghadang</li>
+                <li>Selamatkan dirimu dari galaksi yang hancur ini</li>
+            </ol>
+            <button type="button" onclick="closePopupCara()">Tutup</button>
+        </div>
+        <div class="tentang-game" onclick="openPopupTentang()">
+            <img src="icon/tentang.png" alt="">
+            <span class="teks-tentangGame">Tentang Game</span>
+        </div>
+        <div class="popup-tentangGame" id="popup-tentangGame">
+            <img src="images2/ufo2.png" alt="">
+            <h2>Tentang Game</h2>
+            <p>Suatu hari, di sebuah galaksi yang indah, diserang oleh makhluk luar angkasa yang jahat. Mereka menghancurkan galaksi tersebut hingga tak tersisa. Kamu adalah satu-satunya penyintas yang tersisa di galaksi itu dan akan menghindari segala bahaya yang menghadang. Tujuanmu adalah bertahan hidup di tengah kekacauan dan menyelamatkan diri dari serangan musuh. <br>
+            "Game Spacecraft Survival" adalah permainan yang mengajak pemain untuk menjelajahi ruang angkasa dalam sebuah perjalanan dengan penuh tantangan. Game ini dibuat menggunakan HTML, CSS, dan JavaScript, game ini menampilkan grafis yang menarik dan gameplay yang seru. Pemain dapat mengendalikan pesawat luar angkasa mereka sendiri, menjelajahi ruang angkasa , serta hindari berbagai serangan musuh seperti alien, batu asteroid, dan planet-planet yang menghalangi penjelajahan. 
+            </p>
+            <button type="button" onclick="closePopupTentang()">Tutup</button>
+        </div>
+        <div class="musik" onclick="toggleMusic()">
+            <img id="musik-icon" src="icon/audio.png" alt="">
+            <span class="teks-musik">Musik</span>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="home-script.js"></script>
+
+</body>
+</html>

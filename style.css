@@ -1,242 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-@font-face {
-    font-family: "Valorant Font";
-    src: url(font/Valorant\ Font.ttf);
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8ff;
+    display: flex; 
+    flex-direction: column; 
 }
 
-/* Pesawat 1 */
-
-body{
-    font-family: "Poppins", sans-serif;
+header {
+    font-size: 20px;
+    background: rgb(172,135,197);
+    background: linear-gradient(0deg, rgba(172,135,197,1) 0%, rgba(117,106,182,1) 50%);
+    color: #fcf8ff;
+    padding: 20px;
     text-align: center;
-    color: #fff;
-    background-image: url(images/bg-body.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
-h1{
-    font-family: "Valorant Font";
-    text-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
-    margin-top: 60px;
-    color: #fff;
+.container {
+    display: flex;
 }
 
-h2, h3{
-    color: #fff;
-    text-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
+/* nav {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(224,174,208);
+    background: linear-gradient(0deg, rgba(224,174,208,1) 0%, rgba(172,135,197,1) 60%);
+    color: #333333;
+    width: 15%;
+    align-items: center;
 }
 
-#main{
-    width: 400px;
-    height: 500px;
-    background: url("images/bg-main.png");
-    margin: 0 auto;
+nav a {
+    margin: 10px;
+    text-decoration: none;
+    color: #fcf8ff;
+    padding: 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: #fcf8ff;
+    color: #AC87C5;
+    width: 100%;
+    text-align: center;
+} */
+
+#menu1, #menu2, #menu3{
+    color: #fcf8ff;
+}
+
+#menu1 {
+    margin-top: 30px;
+}
+
+#menu3{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #fcf8ff;
+}
+
+#menu4{
+    background-color: #fcf8ff;
+    color: #AC87C5;
+}
+
+
+.biodata {
+    margin-left: 14%; 
+    margin-top: 30px; 
+    flex-direction: column; 
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px; 
+}
+
+img{
+    border: 4px solid #AC87C5;
     border-radius: 8px;
 }
 
-#area{
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    overflow: hidden;
-    z-index: 100;
+.foto1, .foto2, .foto3{
+    width: 317px;
+    height: 370px;
 }
 
-@keyframes planetJet{
-    from{
-        background:url("images/pesawat1.png") ;
-        background-size: 100%;
-    }
-    to{
-        background:url("images/pesawat2.png") ;
-        background-size: 100%;
-    }
-}
 
-#plane{
-    width: 110px;
-    height: 110px;
-    background:url("images/pesawat1.png") ;
-    background-size: 100%;
-    position: absolute;
-    margin-top: 400px;
-    animation: planetJet 0.3s infinite;
-}
 
-#plane.freeze{
-    width: 110px;
-    height: 110px;
-    background:url("images/pesawat1.png") ;
-    background-size: 100%;
-    position: absolute;
-    margin-top: 400px;
-    animation: none;
-}
-
-@keyframes meteor{
-    from{
-        background:url("images/meteor1.png") ;
-        background-size: 100%;
-    }
-    to{
-        background:url("images/meteor2.png") ;
-        background-size: 100%;
-    }
-}
-
-#meteor{
-    width: 100px;
-    height: 100px;
-    background:url("images/meteor1.png") ;
-    background-size: 100%;
-    animation: meteor 0.3s infinite;
-}
-
-#meteor.freeze{
-    width: 100px;
-    height: 100px;
-    background:url("images/meteor2.png") ;
-    background-size: 100%;
-    animation: none;
-}
-
-.popup{
-    width: 400px;
-    background: #052362;
-    border: 4px solid  #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: black;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
-
-}
-
-.popup h2{
-    font-family: "Valorant Font";
-    font-size: 40px;
-    margin-top: -25px;
-}
-
-.open-popup{
-    visibility: visible;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.popup button{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #fff;
-    color: #052362;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
-}
-
-.popup button:hover{
-    color: #fff;
-    background-color: #052362;
-}
-
-.menu{
-    display: flex;
+.teks1, .teks2, .teks3 {
     align-items: center;
-    justify-content: center;
+    text-align: justify;
+    margin-top: 10px; 
+    flex-grow: 1;
+    width: 300px;
 }
-    
-.musik, .pause{
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0 0 4px #fff, 0 0 8px #8696FE;
-    background: transparent;
-    margin: 10px;
+
+.teks1, .teks2, .teks3, p {
     padding: 10px;
-    cursor: pointer;
+    border: 2px solid #AC87C5;
+    border-radius: 8px;
+    margin: 20px;
 }
 
-.musik img, .pause img{
-    width: 25px;
+.teks1{
+    box-shadow: 3px 6px #E0AED0;
+    -webkit-box-shadow: 0px 6px 6px 0px #E0AED0;
+    -moz-box-shadow: 0px 6px 6px 0px #E0AED0;
+    background-color: #fcf8ff;
+    color: #333333;
+
 }
 
-.musik .teks-musik, .pause .teks-pause{
-    visibility: hidden;
-    width: 120px;
-    background-color: white;
-    color: #333;
-    font-size: 12px;
+.teks2{
+    box-shadow: 3px 6px #E0AED0;
+    -webkit-box-shadow: 0px 6px 6px 0px #E0AED0;
+    -moz-box-shadow: 0px 6px 6px 0px #E0AED0;
+    background-color: #fcf8ff;
+    color: #333333;
+}
+
+.teks3{
+    box-shadow: 3px 6px #E0AED0;
+    -webkit-box-shadow: 0px 6px 6px 0px #E0AED0;
+    -moz-box-shadow: 0px 6px 6px 0px #E0AED0;
+    background-color: #fcf8ff;
+    color: #333333;
+}
+
+#navSamping {
+    font-size: 20px;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background: rgb(224,174,208);
+    background: linear-gradient(0deg, rgba(224,174,208,1) 0%, rgba(172,135,197,1) 60%);
+    transition: 0.5s;
+    z-index: 1000;
+    overflow-y: auto;
+    padding-top: 60px; 
+}
 
-    /* Position the tooltip */
+
+#navSamping a {
+    margin: 10px;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+#navSamping a:hover{
+    background-color: #fcf8ff;
+    color: #AC87C5;
+}
+
+#openNav {
     position: absolute;
-    z-index: 1;
-}
-
-.musik:hover .teks-musik, .pause:hover .teks-pause{
-    visibility: visible;
-}
-
-.popupPause{
-    width: 400px;
-    background: #052362;
-    border: 4px solid  #fff;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0.1);
-    text-align: center;
-    padding: 0 30px 30px;
-    color: black;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-    z-index: 999; /* Atur nilai z-index yang cukup tinggi */
-}
-
-.popupPause h1{
-    margin-top: -70px;
-}
-
-.popupPause img{
-    width: 150px;
-    margin-top: -105px;
-    margin-right: -390px;
-    rotate: 25deg;
-}
-
-.open-popupPause{
-    visibility: visible;
-    transform: translate(-50%,-50%) scale(1);
-}
-
-.popupPause button{
-    width: 100%;
-    margin-top: 20px;
-    padding: 10px 0;
-    background: #fff;
-    color: #052362;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 0 4px #fff, 0 0 12px #8696FE;
-}
-
-.popupPause button:hover{
+    top: 45px;
+    left: 30px;
+    background: none;
+    border: none;
+    font-size: 40px;
     color: #fff;
-    background-color: #052362;
+    cursor: pointer;
+}
+
+#closeNav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #fff;
+    cursor: pointer;
 }

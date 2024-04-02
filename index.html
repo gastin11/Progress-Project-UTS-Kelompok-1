@@ -3,75 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style-index.css">
-    <link rel="icon" type="image/x-icon" href="icon/icon.png">
-    <title>Spacecraft Survival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link href="https://fonts.googleapis.com/cssfamily=Montserrat&display=swap" rel="stylesheet">
+    <title>Biodata Kelompok 1</title>
 </head>
 <body>
-    <video autoplay muted loop id="myVideo">
-        <source src="video/bg menu.mp4" type="video/mp4">
-    </video> 
+    <header>
+        <h1>Biodata Kelompok 1</h1>
+        <button id="openNav">&#9776;</button> 
+    </header>
 
-    <div class="judul">
-        <h1>SPACECRAFT SURVIVAL</h1>
-        <h3>Pilih pesawat</h3>
-    </div>
-    <div class="menu">
-        <div class="pesawat-1">
-            <div class="isi-pesawat1">
-                <img id="img-pesawat1" src="imgMenu/2.png" alt="pesawat"><br>
-            <a href="pesawat1.html">Pilih</a>
+    <div class="container">
+        <nav id="navSamping">
+            <button id="closeNav">&times;</button> 
+            <a id="menu1" href="https://cvgastin.000webhostapp.com/">CV Gastin</a>
+            <a id="menu2" href="https://cvrayhan.000webhostapp.com/">CV Rayhan</a>
+            <a id="menu3" href="https://cvgifari.000webhostapp.com/">CV Ghifari</a>
+            <a id="menu4" href="home.html">Proyek Kami</a>
+        </nav>
+
+        <section id="biodata" class="biodata">
+            <div class="container">
+                <div class="foto">
+                    <img class="foto1" src="gastin.jpg" alt="foto gastin">
+                    <p class="teks1">
+                        &nbsp; Nama Saya adalah Gastin Alfiansa. Saya biasanya dipanggil Gastin. Saya adalah seorang mahasiswa Sistem Informasi di Fakultas Ilmu Komputer UPN "VETERAN" Jawa Timur, dengan NPM 22082010224. Saya lahir di Sidoarjo, 11 Februari 2004. Saat ini, saya tinggal di Sidoarjo dan dapat dihubungi melalui nomor telepon 085714775537.<br><br>
+
+                        &nbsp; Selain kegiatan akademis, saya juga memiliki minat dan keterampilan di berbagai bidang. Saya memiliki keterampilan dalam hal desain grafis. Di samping itu, saya memiliki hobi menggambar. Saya juga ingin menyertakan informasi mengenai tipe kepribadian saya berdasarkan MBTI. Saya mengidentifikasi diri saya sebagai ISFJ, yang menggambarkan seorang yang Introvert, Pengindra, Perasa, dan Pendekat.</p>
+                </div>
+                <div class="foto">
+                    <img class="foto2" src="rehan.jpg" alt="foto gifari">
+                    <p class="teks2">
+                        &nbsp; Nama Saya adalah Rayhan Nashrullah Viddyartha. Saya biasanya dipanggil Rayhan. Saya adalah seorang mahasiswa Sistem Informasi di Fakultas Ilmu Komputer UPN "VETERAN" Jawa Timur, dengan  NPM 22082010238. Saya lahir di Magetan, 20 Februari 2004. Saat ini, saya tinggal di Sidoarjo dan dapat dihubungi melalui nomor telepon 082140806284.<br><br>
+
+                        &nbsp; Selain kegiatan akademis, saya juga memiliki minat dan keterampilan di berbagai bidang. Saya memiliki keterampilan dalam hal pemrograman dan pengembangan aplikasi. Di samping itu, saya memiliki hobi bermain game. Saya juga ingin menyertakan informasi mengenai tipe kepribadian saya berdasarkan MBTI. Saya mengidentifikasi diri saya sebagai ESFJ, yang menggambarkan seorang yang Extrovert, Pengindra, Perasa, dan Pendekat.</p>
+                </div>
+                <div class="foto">
+                    <img class="foto3" src="gif.jpg" alt="">
+                    <p class="teks3">
+                        &nbsp; Nama Saya adalah Ghifari Andian Pratama. Saya biasanya dipanggil Ghifari. Saya adalah seorang mahasiswa Sistem Informasi di Fakultas Ilmu Komputer UPN "VETERAN" Jawa Timur, dengan NPM 22082010220. Saya lahir di Ponorogo, 28 Agustus 2003. Saat ini, saya tinggal di Surabaya dan dapat dihubungi melalui nomor telepon 082231392216.<br><br>
+
+                        &nbsp;Selain kegiatan akademis, saya juga memiliki minat dan keterampilan di berbagai bidang. Saya memiliki keterampilan dalam bermain game. Di samping itu, saya memiliki hobi menonton film. Saya juga ingin menyertakan informasi mengenai tipe kepribadian saya berdasarkan MBTI. Saya mengidentifikasi diri saya sebagai INFP, yang menggambarkan seorang yang Introvert, Intuisi, Perasa, dan Pengamat.</p>
             </div>
-        </div>
-        <div class="pesawat-2">
-            <div class="isi-pesawat2">
-                <img id="img-pesawat2" src="imgMenu/4.png" alt="ufo"><br>
-                <a href="pesawat2.html">Pilih</a>
-            </div>
-        </div>
-        <div class="pesawat-3">
-            <div class="isi-pesawat3">
-                <img id="img-pesawat3" src="imgMenu/6.png" alt="Roket"><br>
-                <a href="pesawat3.html">Pilih</a>
-            </div>
-        </div>
-    </div>
-    <div class="menu-2">
-        <div class="cara-main" onclick="openPopupCara()">
-            <img src="icon/caramain.png" alt="">
-            <span class="teks-caraMain">Cara Bermain</span>
-        </div>
-        <div class="popup-caraMain" id="popup-caraMain">
-            <img src="images/pesawat2.png" alt="">
-            <h2>Cara Bermain</h2>
-            <ol>
-                <li>Pilih pesawat yang ingin kamu mainkan</li>
-                <li>Gerakkan pesawat luar angkasamu</li>
-                <li>Hindari berbagai macam rintangan yang menghadang</li>
-                <li>Selamatkan dirimu dari galaksi yang hancur ini</li>
-            </ol>
-            <button type="button" onclick="closePopupCara()">Tutup</button>
-        </div>
-        <div class="tentang-game" onclick="openPopupTentang()">
-            <img src="icon/tentang.png" alt="">
-            <span class="teks-tentangGame">Tentang Game</span>
-        </div>
-        <div class="popup-tentangGame" id="popup-tentangGame">
-            <img src="images2/ufo2.png" alt="">
-            <h2>Tentang Game</h2>
-            <p>Suatu hari, di sebuah galaksi yang indah, diserang oleh makhluk luar angkasa yang jahat. Mereka menghancurkan galaksi tersebut hingga tak tersisa. Kamu adalah satu-satunya penyintas yang tersisa di galaksi itu dan akan menghindari segala bahaya yang menghadang. Tujuanmu adalah bertahan hidup di tengah kekacauan dan menyelamatkan diri dari serangan musuh. <br>
-            "Game Spacecraft Survival" adalah permainan yang mengajak pemain untuk menjelajahi ruang angkasa dalam sebuah perjalanan dengan penuh tantangan. Game ini dibuat menggunakan HTML, CSS, dan JavaScript, game ini menampilkan grafis yang menarik dan gameplay yang seru. Pemain dapat mengendalikan pesawat luar angkasa mereka sendiri, menjelajahi ruang angkasa , serta hindari berbagai serangan musuh seperti alien, batu asteroid, dan planet-planet yang menghalangi penjelajahan. 
-            </p>
-            <button type="button" onclick="closePopupTentang()">Tutup</button>
-        </div>
-        <div class="musik" onclick="toggleMusic()">
-            <img id="musik-icon" src="icon/audio.png" alt="">
-            <span class="teks-musik">Musik</span>
-        </div>
+        </section>
+        
+
     </div>
 
-    
-    <script type="text/javascript" src="index-script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
